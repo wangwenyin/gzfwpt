@@ -1,0 +1,30 @@
+{
+  "pages":[
+    "pages/login/login",
+    "pages/index/index",
+    "pages/user/user",
+    "pages/fcDetail/fcDetail",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "房地产税公众服务平台",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "主页",
+      "iconPath": "images/home.png",
+      "selectedIconPath": "images/home_selected.png"
+    },{
+      "pagePath": "pages/user/user",
+      "text": "用户",
+      "iconPath": "images/user.png",
+      "selectedIconPath": "images/user_selected.png"
+    }],
+    "selectedColor": "#31adf5",
+    "backgroundColor": "#f7f7fa"
+  }
+}
