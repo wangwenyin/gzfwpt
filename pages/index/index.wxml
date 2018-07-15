@@ -10,13 +10,13 @@
       <button>搜索</button>
     </input>
   </view>
-  <view class='myFc-box'>
+  <view class='myFc-list'>
     <view class='myFc'>
       <view class='title'>
         <image src='../../images/myFc.png'></image>
         <text>我的房产</text>
       </view>
-      <view wx:for="arr" wx:key="item" class='item' bindtap='toFcDetail'>
+      <view wx:for="arr" wx:key="item" class='item' bindtap='toFcDetail' data-index='{{index}}'>
         <view>
           <text>华茂苑 402</text>
           <text>单价：<text style='font-size: 34rpx'>50000</text>元/㎡</text>

@@ -1,13 +1,54 @@
 /* pages/fcDetail/fcDetail.wxss */
-page,
-.page,
-.page__bd{
-    height: 100%;
+page {
+  background: #efeff4
 }
-.page__bd{
-    padding-bottom: 0;
+
+swiper {
+  width: 100%;
+  height: 340rpx
 }
-.weui-tab__content{
-    padding-top: 60px;
-    text-align: center;
+
+image {
+  width: 100%;
+  height: 100%
+}
+
+.btn-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100rpx;
+  overflow: hidden
+}
+
+.btn-footer view:first-child {
+  float: left;
+  width: 20%;
+  height: 100%;
+  font-size: 28rpx;
+  text-align: center;
+  background-color: #fff
+}
+
+.btn-footer view:first-child image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 14rpx
+}
+
+.btn-footer view:first-child text {
+  display: block;
+  width: 100%
+}
+
+.btn-footer view:last-child {
+  float: left;
+  width: 80%;
+  height: 100%;
+  line-height: 100rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 40rpx;
+  background: #31adf5
 }

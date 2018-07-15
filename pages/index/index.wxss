@@ -57,7 +57,7 @@
    border-radius: 40rpx
  }
 
- .myFc-box {
+ .myFc-list {
    padding: 24rpx;
  }
  

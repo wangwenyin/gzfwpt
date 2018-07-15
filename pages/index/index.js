@@ -10,9 +10,11 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   //事件处理函数
-  toFcDetail: function() {
+  toFcDetail: function(e) {
     wx.navigateTo({
       url: '../../pages/fcDetail/fcDetail',
     })
+    // 哪一个item
+    console.log(e.currentTarget.dataset.index)
   }
 })
