@@ -44,14 +44,18 @@ Page({
   },
   //事件处理函数
   toFcDetail: function(e) {
-    // let fcList = JSON.stringify(this.data.fcList)
-    let fcList = this.data.fcList
-    console.log(fcList)
+    let index = e.currentTarget.dataset.index
+    // 之所以叫json字符串，因为字符串的格式符合json的格式,如常见的对象属性名也显示的用双引号,控制台打印内容可以显示
+    // obj.toString得到的是普通的字符串，并不符合json格式,console结果是 [object Object],不能用JSON.parse转
+    let fcList = JSON.stringify(this.data.fcList)
+    try {
+      wx.setStorageSync('fcList', fcList)
+    } catch(e) {
+      console.log(e)
+    }
     wx.navigateTo({
-      url: `/pages/fcDetail/fcDetail?data=${fcList}`,
+      url: `/pages/fcDetail/fcDetail?data=${index}`,
     })
-    // 哪一个item
-    console.log(e.currentTarget.dataset.index)
   },
   toProcessCheck: function() {
     wx.navigateTo({

@@ -1,6 +1,7 @@
 // pages/fcDetail/fcDetail.js
 Page({
   data: {
+    fcObj: null,
     imgUrls: [
       '/images/swiper_01.png',
       '/images/swiper_02.png',
@@ -14,13 +15,13 @@ Page({
     duration: 1000
   },
   onLoad: function(options) {
-    let fcList = options.data
-    console.log(fcList, typeof fcList)
-    console.log(fcList[0])
-    // if (typeof fcList === 'string') {
-    //   fcList = JSON.parse(fcList)
-    // }
-    console.log(typeof fcList, fcList[0])
+    // 路由接收参数(参数会被转化成string,但不符合JSON格式)
+    // let fcList = JSON.parse(options.data)
+    let index = +options.data
+    let fcList = JSON.parse(wx.getStorageSync('fcList'))
+    this.setData({
+      fcObj: fcList[index]
+    })
   },
   toApplyRecheck: function() {
     wx.navigateTo({
