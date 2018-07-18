@@ -1,7 +1,10 @@
 /**app.wxss**/
+@import 'zan-ui/index.wxss';
+
 page {
   height: 100%;
   color: #999;
+  font-size: 24rpx;
   font-family: PingFang-SC-Medium;
   box-sizing: border-box;
 }

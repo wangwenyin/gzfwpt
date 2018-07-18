@@ -1,0 +1,37 @@
+<!--pages/applyRecheck/applyRecheck.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class='section-con'>
+    <view class='section'>
+      <text class="section__title">业主类型：</text>
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <view class="picker">
+            {{array[index]}}
+          </view>
+        </picker>
+    </view>
+    <view class="section">
+      <text>权利人名称：</text>
+      <input type="text" placeholder="请输入名称" />
+    </view>
+    <view class="section">
+      <text>身份证号或组织代码：</text>
+      <input type="idcard" placeholder="请输入身份证号码" />
+    </view>
+    <view class="section">
+      <text>联系人电话：</text>
+      <input type="number" placeholder="请输入联系方式" />
+    </view>
+    <view class="section">
+      <text class="section__title">申请日期：</text>
+      <picker mode="date" value="{{date}}" bindchange="bindDateChange">
+        <view class="picker">
+          {{date}}
+        </view>
+      </picker>
+    </view>
+  </view>
+  <navigator url='/pages/applyRecheck_next/applyRecheck_next'>
+    <button class='next-step'>下一步</button>
+  </navigator>
+</form>
+

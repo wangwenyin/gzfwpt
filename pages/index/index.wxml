@@ -3,11 +3,11 @@
   <view class='search-box' style="background: url(../../images/search_box_bg.png); background-size: cover">
     <view>
       <text>不动产权证号</text>
-      <text>进度查询</text>
+      <text bindtap='toProcessCheck'>进度查询</text>
       <text>模糊搜索</text>
     </view>
     <input placeholder='请输入不动产权证号' placeholder-class="input-placeholder">
-      <button>搜索</button>
+    <button bindtap='text'>搜索</button>
     </input>
   </view>
   <view class='myFc-list'>
@@ -16,15 +16,14 @@
         <image src='../../images/myFc.png'></image>
         <text>我的房产</text>
       </view>
-      <view wx:for="arr" wx:key="item" class='item' bindtap='toFcDetail' data-index='{{index}}'>
+      <view wx:for="{{fcList}}" wx:key="fcName" class='item' bindtap='toFcDetail' data-index='{{index}}'>
         <view>
-          <text>华茂苑 402</text>
-          <text>单价：<text style='font-size: 34rpx'>50000</text>元/㎡</text>
+          <text>{{item.fcName}}</text>
+          <text>单价：<text style='font-size: 34rpx'>{{item.unitPrice}}</text>元/㎡</text>
         </view>
-        <view>不动产权证号：300000123</view>
-        <view>100㎡ 2018-4 税率：1%  总价：5000000元</view>
+        <view>不动产权证号：{{item.fcNumber}}</view>
+        <view>{{item.area}}㎡ {{item.time}} 税率：{{item.taxRate}} 总价：{{item.totalPrice}}元</view>
       </view>
     </view>
   </view>
 </view>
- 

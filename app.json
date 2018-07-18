@@ -4,6 +4,11 @@
     "pages/index/index",
     "pages/user/user",
     "pages/fcDetail/fcDetail",
+    "pages/review/review",
+    "pages/onlineTax/onlineTax",
+    "pages/processCheck/processCheck",
+    "pages/applyRecheck/applyRecheck",
+    "pages/applyRecheck_next/applyRecheck_next",
     "pages/logs/logs"
   ],
   "window":{

@@ -1,0 +1,87 @@
+/* pages/applyRecheck_next/applyRecheck_next.wxss */
+page {
+  background: #efeff4
+}
+.section-con {
+  background: #fff
+}
+.section {
+  width: 90%;
+  height: 140rpx;
+  line-height: 140rpx;
+  margin: 0 auto;
+  font-size: 30rpx;
+  border-bottom: 1px solid #eee;
+  overflow: hidden
+}
+
+.section input, .section text, .section button {
+  float: left
+}
+
+.section button {
+  width: 120rpx;
+	height: 60rpx;
+  padding: 0;
+  line-height: 1.8;
+  font-size: 30rpx;
+  color: #31adf5;
+	border-radius: 10rpx;
+	border: solid 1rpx #31adf5;
+}
+
+.section input, .section button {
+  margin-top: 44rpx
+}
+
+.section text {
+  color: #3d3d3d
+}
+
+.section .section__title {
+  margin-right: 28rpx
+}
+
+.section input, .section button {
+  margin-left: 28rpx
+}
+
+.input-placeholder {  
+    color: #999
+}
+
+.info {
+  width: 608rpx;
+	height: 54rpx;
+  margin: 10rpx auto;
+	font-size: 24rpx;
+	line-height: 30rpx;
+	color: #e94f4f;
+}
+
+.reason-box {
+  width: 100%;
+  background: #fff
+}
+
+.textarea-placeholder {
+  font-size: 30rpx;
+	color: #3d3d3d;
+}
+
+.submit {
+  width: 85%;
+  height: 88rpx;
+  margin-top: 30rpx;
+  font-size: 36rpx;
+  color: #fff;
+  background-image: linear-gradient(90deg, 
+		#31adf5 0%, 
+		#1c7ae6 100%), 
+	linear-gradient(
+		#eef5f9, 
+		#eef5f9);
+	background-blend-mode: normal, 
+		normal;
+	border-radius: 44rpx
+}

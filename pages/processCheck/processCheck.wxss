@@ -1,0 +1,80 @@
+/* pages/processCheck/processCheck.wxss */
+@import '/pages/btn-footer/btn-footer.wxss';
+
+page {
+  background: #efeff4;
+  padding: 24rpx;
+}
+
+.item {
+  background: #fff;
+  padding: 20rpx;
+}
+
+.item view:nth-child(1) {
+  overflow: hidden;
+}
+
+.item view:nth-child(1) text:first-child {
+  float: left;
+  font-size: 34rpx;
+  color: #3d3d3d;
+}
+
+.item view:nth-child(1) text:last-child {
+  float: right;
+  font-size: 24rpx;
+  color: #f59e2c;
+}
+
+.item view:nth-child(2) {
+  margin: 10rpx 0;
+  font-size: 24rpx;
+  color: #707070;
+}
+
+.item view:nth-child(3) {
+  font-size: 24rpx;
+  color: #1e609b;
+}
+
+.steps {
+  background: #fff;
+  padding: 20rpx;
+  margin-top: 12rpx;
+  overflow: hidden
+}
+
+.time {
+  float: left;
+  width: 25%;
+}
+
+.time text {
+  display: block
+}
+
+.time-item text:first-of-type {
+  color: #707070;
+  font-size: 32rpx
+}
+
+.time-item text:last-of-type {
+  color: #999;
+  font-size: 24rpx
+}
+
+.time-item {
+  margin-top: 40rpx;
+  text-align: center
+}
+
+.tips {
+  color: #707070;
+  text-align: center
+}
+
+.tips .btn-review {
+  color: #1c7ae6
+}
+

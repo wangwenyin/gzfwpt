@@ -1,0 +1,10 @@
+<!--pages/btn-footer/btn-footer.wxml-->
+<template name="btn-footer">
+  <view class='btn-footer'>
+    <view>
+      <image src='/images/contact.png'></image>
+      <text>在线咨询</text>
+    </view>
+    <navigator url='/pages/onlineTax/onlineTax'><view>在线纳税</view></navigator>
+  </view>  
+</template>

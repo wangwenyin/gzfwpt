@@ -1,4 +1,6 @@
 /* pages/fcDetail/fcDetail.wxss */
+@import '/pages/btn-footer/btn-footer.wxss';
+
 page {
   background: #efeff4
 }
@@ -13,42 +15,65 @@ image {
   height: 100%
 }
 
-.btn-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100rpx;
-  overflow: hidden
+.detail-wrapper {
+  padding: 24rpx 24rpx 16rpx;
+}
+.detail {
+  padding: 20rpx;
+  background: #fff
 }
 
-.btn-footer view:first-child {
-  float: left;
-  width: 20%;
-  height: 100%;
-  font-size: 28rpx;
-  text-align: center;
-  background-color: #fff
+.title {
+  font-size: 34rpx;
+  color: #3d3d3d
 }
 
-.btn-footer view:first-child image {
-  width: 40rpx;
-  height: 40rpx;
-  margin-top: 14rpx
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24rpx;
+  color: #999
 }
 
-.btn-footer view:first-child text {
+.detail .item .num {
+  color: #f59e2c;
+  font-size: 34rpx
+}
+
+.item text {
   display: block;
-  width: 100%
+  margin-top: 6rpx
 }
 
-.btn-footer view:last-child {
-  float: left;
-  width: 80%;
-  height: 100%;
-  line-height: 100rpx;
-  text-align: center;
-  color: #fff;
-  font-size: 40rpx;
-  background: #31adf5
+.detail>view:first-child {
+  padding-bottom: 50rpx;
+  border-bottom: 1rpx solid #eee
 }
+
+.detail>view:last-child {
+  margin-top: 24rpx
+}
+
+.detail view:last-child view {
+  margin-top: 36rpx;
+  font-size: 26rpx;
+  color: #3d3d3d
+}
+
+.detail>view:last-child view:first-child {
+  margin-top: 0
+}
+
+.detail view:last-child view text {
+  color: #707070
+}
+
+.tips {
+  color: #707070;
+  text-align: center
+}
+
+.tips .btn-recheck {
+  color: #1c7ae6
+}
+

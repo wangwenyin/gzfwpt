@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "进度查询",
+  "usingComponents": {
+    "zan-steps": "/zan-ui/steps/index"
+  }
+}

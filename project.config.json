@@ -13,7 +13,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.0.4",
 	"appid": "wx4c441b666aa1910d",
-	"projectname": "gzfwpt",
+	"projectname": "gzfwpt_svn",
 	"isGameTourist": false,
 	"condition": {
 		"search": {
@@ -45,6 +45,36 @@
 					"id": -1,
 					"name": "login",
 					"pathName": "pages/login/login",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "recheck",
+					"pathName": "pages/applyRecheck/applyRecheck",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "fcDetail",
+					"pathName": "pages/fcDetail/fcDetail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "processCheck",
+					"pathName": "pages/processCheck/processCheck",
+					"query": ""
+				},
+				{
+					"id": 5,
+					"name": "progress",
+					"pathName": "dist/example/progress/progress.wxml",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "review",
+					"pathName": "pages/review/review",
 					"query": ""
 				}
 			]

@@ -7,10 +7,26 @@
     </swiper-item>
   </block>
 </swiper>
-<view class='btn-footer'>
-  <view>
-    <image src='../../images/contact.png'></image>
-    <text>在线咨询</text>
+<view class='detail-wrapper'>
+  <view class='detail'>
+    <view>
+      <view class='title'>华茂苑 402</view>
+      <view class='item'>
+        <view><text>单价</text><text class='num'>50000元/㎡</text></view>
+        <view><text>面积</text><text class='num'>100㎡</text></view>
+        <view><text>房产证号</text><text class='num'>12358481</text></view>
+      </view>
+    </view>
+    <view>
+      <view><text space='emsp'>总  价</text>：5000000.00元</view>
+      <view><text>免税部分</text>：2000000.00元</view>
+      <view><text space='emsp'>税  基</text>：3000000.00元</view>
+      <view><text space='emsp'>税  率</text>：1%</view>
+      <view><text>应缴税额</text>：30000.00元</view>
+    </view>
   </view>
-  <view>在线纳税</view>
 </view>
+<view class='tips'>对此数据有疑问，提交
+  <text class='btn-recheck' bindtap='toApplyRecheck'>申请复核?</text></view>
+<import src="/pages/btn-footer/btn-footer.wxml" />
+<template is="btn-footer" />
