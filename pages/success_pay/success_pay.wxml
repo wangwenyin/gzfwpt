@@ -1,0 +1,9 @@
+<!--pages/success_pay/success_pay.wxml-->
+<view class='icon'>
+  <image src='/images/success_pay.png'></image>
+  <view>纳税成功</view>
+</view>
+<view class='btn'>
+  <button>返回首页</button>
+  <button>查看税单</button>
+</view>

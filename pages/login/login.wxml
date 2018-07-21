@@ -2,11 +2,11 @@
 <view class='login-container'>
   <view class='title'>登录</view>
   <view class='form'>
-    <input name="input" placeholder-class="input-placeholder" placeholder="请输入账号" />
-    <input name="input" placeholder-class="input-placeholder" placeholder="请输入密码" />
+    <input name="username" value='admin' placeholder-class="input-placeholder" placeholder="请输入账号" />
+    <input name="password" password='true' value='123' placeholder-class="input-placeholder" placeholder="请输入密码" />
     <text class='forgetPass'>忘记密码？</text>
-    <navigator url='../../pages/index/index'>
-      <button class='login'>登录</button>
+    <navigator url='../../pages/index/index' open-type='switchTab'>
+      <button class='login' bindtap='login'>登录</button>
     </navigator> 
     <button class='wxLogin'>
       <image src='../../images/weixin.png'></image>

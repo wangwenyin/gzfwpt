@@ -15,13 +15,24 @@ Page({
     duration: 1000
   },
   onLoad: function(options) {
+    wx.showNavigationBarLoading()
+    wx.showLoading({
+      title: '加载中...',
+      mask: true
+    })
     // 路由接收参数(参数会被转化成string,但不符合JSON格式)
     // let fcList = JSON.parse(options.data)
-    let index = +options.data
-    let fcList = JSON.parse(wx.getStorageSync('fcList'))
+    // 刷新会index状态丢失
+    // let index = +options.data 
+    let fcObj = JSON.parse(wx.getStorageSync('fcItem'))
+    fcObj.payTaxC = (fcObj.taxBase * (fcObj.taxRate.replace('%', '') / 100)).toFixed(2)
     this.setData({
-      fcObj: fcList[index]
+      fcObj: fcObj
     })
+  },
+  onReady: function() {
+    wx.hideLoading()
+    wx.hideNavigationBarLoading()
   },
   toApplyRecheck: function() {
     wx.navigateTo({

@@ -19,10 +19,10 @@
     </view>
     <view>
       <view><text space='emsp'>总  价</text>：{{fcObj.totalPrice}}元</view>
-      <view><text>免税部分</text>：2000000.00元</view>
+      <view><text>免税部分</text>：{{fcObj.freePart}}元</view>
       <view><text space='emsp'>税  基</text>：{{fcObj.taxBase}}元</view>
       <view><text space='emsp'>税  率</text>：{{fcObj.taxRate}}</view>
-      <view><text>应缴税额</text>：30000.00元</view>
+      <view><text>应缴税额</text>：{{fcObj.payTaxC}}元</view>
     </view>
   </view>
 </view>

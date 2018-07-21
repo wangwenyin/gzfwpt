@@ -1,0 +1,6 @@
+<!--pages/fail_pay/fail_pay.wxml-->
+<view class='icon'>
+  <image src='/images/fail_pay.png'></image>
+  <view>纳税失败</view>
+</view>
+<button>重新支付</button>

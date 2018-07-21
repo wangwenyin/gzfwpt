@@ -76,6 +76,24 @@
 					"name": "review",
 					"pathName": "pages/review/review",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "onlineTax",
+					"pathName": "pages/onlineTax/onlineTax",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "success_pay",
+					"pathName": "pages/success_pay/success_pay",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "fail_pay",
+					"pathName": "pages/fail_pay/fail_pay",
+					"query": ""
 				}
 			]
 		}

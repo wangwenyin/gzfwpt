@@ -6,6 +6,8 @@
     "pages/fcDetail/fcDetail",
     "pages/review/review",
     "pages/onlineTax/onlineTax",
+    "pages/success_pay/success_pay",
+    "pages/fail_pay/fail_pay",
     "pages/processCheck/processCheck",
     "pages/applyRecheck/applyRecheck",
     "pages/applyRecheck_next/applyRecheck_next",

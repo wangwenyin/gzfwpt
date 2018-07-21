@@ -1,0 +1,36 @@
+/* pages/fail_pay/fail_pay.wxss */
+page {
+  background: #efeff4;
+}
+
+.icon {
+  margin-top: 150rpx
+}
+
+.icon image {
+  display: block;
+  width: 197rpx;
+  height: 197rpx;
+  margin: 0 auto
+}
+
+.icon view {
+  margin: 30rpx 0 80rpx;
+  font-size: 34rpx;
+  color: #3d3d3d;
+  text-align: center
+}
+
+button {
+  width: 662rpx;
+	height: 88rpx;
+  margin: 0 auto;
+  color: #fff;
+	background-image: linear-gradient(90deg, 
+		#31adf5 0%, 
+		#1c7ae6 100%), 
+	linear-gradient(
+		#31adf5, 
+		#31adf5);
+	border-radius: 44rpx;
+}

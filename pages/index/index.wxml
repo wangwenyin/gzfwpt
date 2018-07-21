@@ -18,11 +18,11 @@
       </view>
       <view wx:for="{{fcList}}" wx:key="fcName" class='item' bindtap='toFcDetail' data-index='{{index}}'>
         <view>
-          <text>{{item.fcName}}</text>
-          <text>单价：<text style='font-size: 34rpx'>{{item.unitPrice}}</text>元/㎡</text>
+          <view class='fcName'>{{item.fcName}}</view>
+          <view class='unitPrice'>单价：<text style='font-size: 34rpx'>{{item.unitPrice}}</text>元/㎡</view>
         </view>
         <view>不动产权证号：{{item.fcNumber}}</view>
-        <view>{{item.area}}㎡ {{item.time}} 税率：{{item.taxRate}} 总价：{{item.totalPrice}}元</view>
+        <view>{{item.area}}㎡ {{item.time}} 税率：{{item.taxRate}}  总价：{{item.totalPrice}}元</view>
       </view>
     </view>
   </view>
