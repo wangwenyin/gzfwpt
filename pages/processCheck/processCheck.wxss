@@ -15,13 +15,13 @@ page {
   overflow: hidden;
 }
 
-.item view:nth-child(1) text:first-child {
+.item view:nth-child(1) .fcName {
   float: left;
   font-size: 34rpx;
   color: #3d3d3d;
 }
 
-.item view:nth-child(1) text:last-child {
+.item view:nth-child(1) .unitPrice {
   float: right;
   font-size: 24rpx;
   color: #f59e2c;
@@ -70,6 +70,7 @@ page {
 }
 
 .tips {
+  margin-top: 16rpx;
   color: #707070;
   text-align: center
 }

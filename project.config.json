@@ -33,7 +33,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 10,
 			"list": [
 				{
 					"id": -1,
@@ -93,6 +93,12 @@
 					"id": -1,
 					"name": "fail_pay",
 					"pathName": "pages/fail_pay/fail_pay",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "user_center",
+					"pathName": "pages/user_center/user_center",
 					"query": ""
 				}
 			]

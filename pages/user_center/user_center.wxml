@@ -1,0 +1,23 @@
+<!--pages/user_center/user_center.wxml-->
+<view class='user-info'>
+  <view>
+    <text wx:if='{{hasUserInfo}}' class='username'>{{userInfo.nickName}}</text>
+    <text wx:else class='username'>admin</text>
+    <text class='upgrade'>点击完善信息，访客升级业主</text>
+  </view>
+  <image wx:if='{{hasUserInfo}}' class='avatar' src="{{userInfo.avatarUrl}}"></image>
+  <view wx:else class='avatar'></view>
+</view>
+<view class='about'>
+  <view>
+    <text>意见反馈</text>
+    <image src='/images/suggest.png'></image> 
+  </view>
+  <view>
+    <text>关于我们</text>
+    <image src='/images/about_us.png'></image>
+  </view>
+</view>
+<view class='logout' bindtap='logout'>退出登录</view>
+
+

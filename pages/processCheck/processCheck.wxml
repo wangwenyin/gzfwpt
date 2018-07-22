@@ -1,8 +1,8 @@
 <!--pages/processCheck/processCheck.wxml-->
 <view class='item'>
   <view>
-    <text>华茂苑 402</text>
-    <text>单价：<text style='font-size: 34rpx'>50000</text>元/㎡</text>
+    <view class='fcName'>华茂苑 402</view>
+    <view class='unitPrice'>单价：<text style='font-size: 34rpx'>50000</text>元/㎡</view>
   </view>
   <view>不动产权证号：300000123</view>
   <view>100㎡ 2018-4 税率：1% 总价：5000000元</view>

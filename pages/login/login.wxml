@@ -8,9 +8,10 @@
     <navigator url='../../pages/index/index' open-type='switchTab'>
       <button class='login' bindtap='login'>登录</button>
     </navigator> 
-    <button class='wxLogin'>
-      <image src='../../images/weixin.png'></image>
+    <button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class='wxLogin'>
+      <image src='/images/weixin.png'></image>
       微信授权登录
     </button>
+    <view wx:else>请升级微信版本</view>
   </view>
 </view>

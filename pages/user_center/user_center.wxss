@@ -1,0 +1,74 @@
+/* pages/user_center/user_center.wxss */
+page {
+  background: #efeff4;
+  font-size: 28rpx
+}
+.user-info {
+  background: #fff;
+  padding: 40rpx;
+  overflow: hidden
+}
+
+.user-info view:first-child {
+  float: left;
+  width: 70%;
+}
+
+.user-info view:first-child .username {
+  display: block;
+  color: #000;
+  font-size: 48rpx;
+  font-weight: bold
+}
+
+.user-info view:first-child .upgrade {
+  display: block;
+  margin-top: 12rpx;
+  color: #707070
+}
+
+.user-info .avatar {
+  float: right;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+
+view.avatar {
+  background: lightblue
+}
+
+.about {
+  margin-top: 20rpx;
+  padding: 0 40rpx;
+  background: #fff
+}
+
+.about view {
+  height: 120rpx;
+  line-height: 120rpx;
+  border-bottom: 1rpx solid #eee;
+  overflow: hidden
+}
+
+.about view text {
+  float: left;
+  color: #999
+}
+
+.about view image {
+  float: right;
+  width: 64rpx;
+  height: 64rpx;
+  margin-top: 28rpx
+}
+
+.logout {
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-top: 40rpx;
+  color: red;
+  font-weight: bold;
+  background: #fff;
+  text-align: center
+}
