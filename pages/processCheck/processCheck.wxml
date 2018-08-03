@@ -2,15 +2,15 @@
 <view class='item'>
   <view>
     <view class='fcName'>华茂苑 402</view>
-    <view class='unitPrice'>单价：<text style='font-size: 34rpx'>50000</text>元/㎡</view>
+    <view class='unitPrice'>单价：<text style='font-size: 34rpx'>{{applyObj.pgprice_dj}}</text>元/㎡</view>
   </view>
-  <view>不动产权证号：300000123</view>
-  <view>100㎡ 2018-4 税率：1% 总价：5000000元</view>
+  <view>不动产权证号：{{applyObj.cert_no}}</view>
+  <view>100㎡ {{applyObj.update_time}} 税率：{{applyObj.tax_ratio*100}}% 总价：{{applyObj.pgprice_zj}}元</view>
 </view>
 <view class='steps'>
   <view class='time'>
-    <view wx:for="arrrrr" class='time-item'>
-      <text>08:56</text>
+    <view wx:for="arrrr" class='time-item'>
+      <text>{{8+index}}:56</text>
       <text>2018-7-18</text>
     </view>
   </view>

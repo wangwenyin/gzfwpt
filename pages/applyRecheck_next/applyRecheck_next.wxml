@@ -3,19 +3,19 @@
   <view class='section-con'>
     <view class="section">
       <text>房产名称：</text>
-      <input type="text" placeholder="请输入房产名称" />
+      <input name='fcmc' type="text" placeholder="请输入房产名称" />
     </view>
     <view class='section'>
       <text class="section__title">房产类别：</text>
-      <picker bindchange="bindFcPickerChange" value="{{indexFc}}" range="{{arrayFc}}">
+      <picker name='fclb' bindchange="bindFcPickerChange" value="{{indexFc}}" range="{{arrayFc}}">
           <view class="picker">
             {{arrayFc[indexFc]}}
-          </view>
+          </view> 
         </picker>
     </view>
     <view class='section'>
       <text class="section__title">申请人：</text>
-      <picker bindchange="bindSqrPickerChange" value="{{indexSqr}}" range="{{arraySqr}}">
+      <picker name='sqr' bindchange="bindSqrPickerChange" value="{{indexSqr}}" range="{{arraySqr}}">
           <view class="picker">
             {{arraySqr[indexSqr]}}
           </view>
@@ -23,22 +23,22 @@
     </view>
     <view class="section">
       <text>权利人身份证或营业执照：</text>
-      <button>上传</button>
+      <button bindtap='uploadFile' data-index='1'>上传</button>
     </view>
     <view class="section">
       <text>房产证书：</text>
-      <button>上传</button>
+      <button bindtap='uploadFile' data-index='2'>上传</button>
     </view>
     <view class="section">
       <text>授权书：</text>
-      <button>上传</button>
+      <button bindtap='uploadFile' disabled='{{disabled}}' data-index='3'>上传</button>
     </view>
   </view>
-  <view class='info'>说明：如果委托代理人，请上传业主签名的授权书扫描       件；如业主本人申请，则跳过此步。</view>
+  <view class='info'>说明：如果委托代理人，请上传业主签名的授权书扫描件；如业主本人申请，则跳过此步。</view>
   <view class="section reason-box">
-    <textarea placeholder="正当理由陈述:" auto-focus />
+    <textarea name='zdlycs' placeholder='正当理由陈述：' show-confirm-bar='false' />
   </view>
-  <navigator url='/pages/applyRecheck_next/applyRecheck_next'>
-    <button class='submit'>提交申请</button>
-  </navigator>
+  <view class='tip' wx:if='{{showTip}}'>每一项都是必填的哦。</view>
+  <button class='submit' formType="submit" loading='{{loading}}'>提交申请</button>
 </form>
+

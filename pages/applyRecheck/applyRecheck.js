@@ -1,20 +1,18 @@
 // pages/applyRecheck/applyRecheck.js
+const app = getApp()
 const util = require('../../utils/util.js')
 
 Page({
   data: {
-    array: ['个人', '代理'],
+    array: ['个人', '企业'],
+    showTip1: false,
+    showTip2: false,
     index: 0,
     date: ''
   },
   onLoad: function () {
     this.setData({
       date: util.formatDate(new Date())
-    })
-  },
-  bindPickerChange: function (e) {
-    this.setData({
-      index: e.detail.value
     })
   },
   bindDateChange: function (e) {
@@ -24,7 +22,26 @@ Page({
     })
   },
   formSubmit: function (e) {
-    console.log('form发生了submit事件，携带数据为：', e.detail.value)
+    let formData1 = e.detail.value
+    formData1.yzlx += ''
+    for (let key in formData1) {
+      if (formData1[key] === '') {
+        this.setData({
+          showTip: true
+        })
+        return 
+      }
+    }
+    if (formData1.lxrdh.length !== 11) {
+      this.setData({
+        showTip2: true
+      })
+      return
+    }
+    app.globalData.formData1 = formData1
+    wx.navigateTo({
+      url: '/pages/applyRecheck_next/applyRecheck_next',
+    })
   },
   formReset: function () {
     console.log('form发生了reset事件')

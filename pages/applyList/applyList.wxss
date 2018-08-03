@@ -1,0 +1,34 @@
+/* pages/applyList/applyList.wxss */
+.item {
+  background: #fff;
+  margin: 0 40rpx;
+  padding: 40rpx 0;
+  border-bottom: 1rpx solid #eee
+}
+
+.item view:nth-child(1) {
+  overflow: hidden;
+}
+
+.item view:nth-child(1) .fcName {
+  float: left;
+  font-size: 34rpx;
+  color: #3d3d3d;
+}
+
+.item view:nth-child(1) .unitPrice {
+  float: right;
+  font-size: 24rpx;
+  color: #f59e2c;
+}
+
+.item view:nth-child(2) {
+  margin: 10rpx 0;
+  font-size: 24rpx;
+  color: #707070;
+}
+
+.item view:nth-child(3) {
+  font-size: 24rpx;
+  color: #1e609b;
+}

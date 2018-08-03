@@ -4,6 +4,6 @@
   <view>纳税成功</view>
 </view>
 <view class='btn'>
-  <button>返回首页</button>
+  <button bindtap='toIndex'>返回首页</button>
   <button>查看税单</button>
 </view>

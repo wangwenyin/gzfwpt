@@ -4,14 +4,14 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.0.4",
+	"libVersion": "2.2.0",
 	"appid": "wx4c441b666aa1910d",
 	"projectname": "gzfwpt_svn",
 	"isGameTourist": false,
@@ -33,7 +33,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 10,
+			"current": 15,
 			"list": [
 				{
 					"id": -1,
@@ -100,6 +100,35 @@
 					"name": "user_center",
 					"pathName": "pages/user_center/user_center",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "applyList",
+					"pathName": "pages/applyList/applyList",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "consultant",
+					"pathName": "pages/consultant/consultant",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "answer",
+					"pathName": "pages/answer/answer",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "applyRecheck_next",
+					"pathName": "pages/applyRecheck_next/applyRecheck_next",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "onlineApp",
+					"pathName": "pages/onlineApp/onlineApp"
 				}
 			]
 		}

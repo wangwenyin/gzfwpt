@@ -8,7 +8,7 @@
   overflow: hidden
 }
 
-.btn-footer view:first-child {
+.btn-footer .consultant {
   float: left;
   width: 20%;
   height: 100%;
@@ -17,18 +17,18 @@
   background-color: #fff
 }
 
-.btn-footer view:first-child image {
+.btn-footer .consultant image {
   width: 40rpx;
   height: 40rpx;
   margin-top: 14rpx
 }
 
-.btn-footer view:first-child text {
+.btn-footer .consultant text {
   display: block;
   width: 100%
 }
 
-.btn-footer view:last-child {
+.btn-footer .onlineTax {
   float: left;
   width: 80%;
   height: 100%;

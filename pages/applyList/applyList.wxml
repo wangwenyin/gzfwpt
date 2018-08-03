@@ -1,0 +1,9 @@
+<!--pages/applyList/applyList.wxml-->
+<view class='item' wx:for='{{applyList}}' wx:key='{{item.cert_no}}' bindtap='toProcessCheck' data-index='{{index}}'>
+  <view>
+    <view class='fcName'>华茂苑 402</view>
+    <view class='unitPrice'>单价：<text style='font-size: 34rpx'>{{item.pgprice_dj}}</text>元/㎡</view>
+  </view>
+  <view>不动产权证号：{{item.cert_no}}</view>
+  <view>100㎡ {{item.value_time}} 税率：{{item.tax_ratio*100}}% 总价：{{item. pgprice_zj}}元</view>
+</view>

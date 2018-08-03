@@ -2,29 +2,29 @@
 <view class='item-container'>
   <view class='item'>
     <text>纳税项目：</text>
-    <text>{{fcObj.fcName}}</text>
+    <text>{{fcObj.fcmc}}</text>
   </view>
   <view class='item'>
     <text>税款所属时期：</text>
-    <text>{{fcObj.time}}</text>
+    <text>{{fcObj.period}}</text>
   </view>
   <view class='item'>
     <text>税基：</text>
-    <text>{{fcObj.taxBase}}元</text>
+    <text>{{fcObj.tax_base}}元</text>
   </view>
   <view class='item'>
     <text>税率：</text>
-    <text>{{fcObj.taxRate}}</text>
+    <text>{{fcObj.tax_ratio*100}}%</text>
   </view>
   <view class='item'>
     <text>已缴或扣除税额：</text>
-    <text>{{fcObj.payedTax}}元</text>
+    <text>{{fcObj.tax_paid}}元</text>
   </view>
 </view>
 <view class='item-container mt'>
   <view class='item'>
     <text>应缴税额：</text>
-    <text>{{fcObj.payTax}}元</text>
+    <text>{{fcObj.tax}}元</text>
   </view>
   <view class='item'>
     <text>逾期罚息：</text>

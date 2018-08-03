@@ -10,19 +10,20 @@
 <view class='detail-wrapper'>
   <view class='detail'>
     <view>
-      <view class='title'>{{fcObj.fcName}}</view>
+      <view class='title'>华茂苑 302</view>
       <view class='item'>
-        <view><text>单价</text><text class='num'>{{fcObj.unitPrice}}元/㎡</text></view>
-        <view><text>面积</text><text class='num'>{{fcObj.area}}㎡</text></view>
-        <view><text>房产证号</text><text class='num'>{{fcObj.fcNumber}}</text></view>
+        <view><text>房产证号</text><text class='num'>{{303032003020}}</text></view>
+        <view><text>面积</text><text class='num'>{{100}}
+        ㎡</text></view>
+        <view><text>单价</text><text class='num'>{{fcObj.pgprice_dj}}元/㎡</text></view>
       </view>
     </view>
     <view>
-      <view><text space='emsp'>总  价</text>：{{fcObj.totalPrice}}元</view>
-      <view><text>免税部分</text>：{{fcObj.freePart}}元</view>
-      <view><text space='emsp'>税  基</text>：{{fcObj.taxBase}}元</view>
-      <view><text space='emsp'>税  率</text>：{{fcObj.taxRate}}</view>
-      <view><text>应缴税额</text>：{{fcObj.payTaxC}}元</view>
+      <view><text space='emsp'>总  价</text>：{{fcObj.pgprice_zj}}元</view>
+      <view><text>免税部分</text>：{{fcObj.tax_deduction}}元</view>
+      <view><text space='emsp'>税  基</text>：{{fcObj.tax_base}}元</view>
+      <view><text space='emsp'>税  率</text>：{{fcObj.tax_ratio*100}}%</view>
+      <view><text>应缴税额</text>：{{fcObj.tax}}元</view>
     </view>
   </view>
 </view>

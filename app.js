@@ -34,6 +34,10 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    baseUrl: 'http://172.17.0.44:8080/v1/dispute',
+    userInfo: null,
+    formData1: null,
+    cert_no: '',
+    zjhm: ''
   }
 })

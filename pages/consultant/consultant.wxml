@@ -1,0 +1,27 @@
+<!--pages/consultant/consultant.wxml-->
+<input class='search' confirm-type='search' placeholder='请输入你要检索的内容'>
+  <image src='/images/search.png'></image>
+</input>
+<view class='question-box'>
+  <view class='title'>
+    <text class="{{show ? 'line active' : 'no-active'}}" bindtap='clickHot'>热门搜索</text>
+    <text class="{{show ? 'no-active' : 'line active'}}" bindtap='clickHistory'>历史搜索</text>
+  </view>
+  <view class='hot' wx:if='{{show}}' bindtap='toAnswer'>
+    <view>为什么查不到评估价？</view>
+    <view>刚办理的房产证怎么查询不到价格？</view>
+    <view>我的房产需要缴纳的税费是多少吗？</view>
+    <view>你好，能帮我查一下房屋编码吗？</view>
+    <view>房地产证上是两个（或多人）权利人的怎么查询？</view>
+  </view>
+  <view class='history' wx:if='{{!show}}'>
+    <view>为什么查不到评估价？</view>
+    <view>刚办理的房产证怎么查询不到价格？</view>
+  </view>
+</view>
+<view class='btn-footer'>
+  <view bindtap='makePhoneCall'>电话咨询</view>
+  <navigator url='/pages/onlineTax/onlineTax'>
+    <view bindtap='toOnlineApp'>窗口咨询预约</view>
+  </navigator>
+</view>  

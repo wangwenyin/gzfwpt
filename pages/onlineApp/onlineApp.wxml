@@ -1,0 +1,43 @@
+<!--pages/onlineApp/onlineApp.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class='section-con'>
+    <view class="section">
+      <text>不动产权证号：</text>
+      <input name='fczh' type="text" placeholder="请输入不动产权证号" />
+    </view>
+    <view class="section">
+      <text>业主姓名：</text>
+      <input name='yzxm' type="text" placeholder="请输入业主姓名" />
+    </view>
+    <view class="section">
+      <text>身份证号或组织代码：</text>
+      <input name='sfzh' type="idcard" placeholder="请输入身份证号码" />
+    </view>
+    <view class="section">
+      <text>手机号码：</text>
+      <input name='sj' type="number" maxlength='11' placeholder="请输入手机号码" />
+    </view>
+    <view class="section">
+      <text class="section__title">预约时间：</text>
+      <picker 
+        name="xzyysj"
+        mode="multiSelector"
+        value="{{dateTime}}"
+        bindcolumnchange="changeDateTimeColumn"                            
+        range="{{dateTimeArray}}">
+        <view class="picker">
+          {{dateTimeArray[0][dateTime[0]]}}-{{dateTimeArray[1]
+          [dateTime[1]]}}-{{dateTimeArray[2][dateTime[2]]}}   
+          {{dateTimeArray[3][dateTime[3]]}}:{{dateTimeArray[4]
+          [dateTime[4]]}} 
+        </view>
+      </picker>
+    </view>
+    <view class="section reason-box">
+      <textarea name='wtjs' placeholder='问题简述：'                  show-confirm-bar='false' />
+    </view>
+  </view>
+  <view class='tip' wx:if='{{showTip1}}'>每一项都是必填的哦。</view>
+  <view class='tip' wx:if='{{showTip2}}'>手机号码输入有误。</view>
+  <button class='submit' formType="submit" loading='{{loading}}'>提交信息</button>
+</form>

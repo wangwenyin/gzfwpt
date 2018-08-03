@@ -1,4 +1,6 @@
 // pages/fcDetail/fcDetail.js
+const app = getApp()
+
 Page({
   data: {
     fcObj: null,
@@ -25,16 +27,18 @@ Page({
     // 刷新会index状态丢失
     // let index = +options.data 
     let fcObj = JSON.parse(wx.getStorageSync('fcItem'))
-    fcObj.payTaxC = (fcObj.taxBase * (fcObj.taxRate.replace('%', '') / 100)).toFixed(2)
+    // fcObj.payTaxC = (fcObj.taxBase * (fcObj.taxRate.replace('%', '') / 100)).toFixed(2)
     this.setData({
       fcObj: fcObj
     })
+    app.globalData.cqzh = fcObj.cert_no
   },
   onReady: function() {
     wx.hideLoading()
     wx.hideNavigationBarLoading()
   },
   toApplyRecheck: function() {
+    app.globalData.cert_no = this.data.fcObj.cert_no
     wx.navigateTo({
       url: '/pages/applyRecheck/applyRecheck',
     })

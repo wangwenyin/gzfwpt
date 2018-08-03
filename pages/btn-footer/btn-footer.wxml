@@ -1,10 +1,14 @@
 <!--pages/btn-footer/btn-footer.wxml-->
 <template name="btn-footer">
   <view class='btn-footer'>
-    <view>
-      <image src='/images/contact.png'></image>
-      <text>在线咨询</text>
-    </view>
-    <navigator url='/pages/onlineTax/onlineTax'><view>在线纳税</view></navigator>
+    <navigator url='/pages/consultant/consultant'>
+      <view class='consultant'>
+        <image src='/images/contact.png'></image>
+        <text>在线咨询</text>
+      </view>
+    </navigator>
+    <navigator url='/pages/onlineTax/onlineTax'>
+      <view class='onlineTax'>在线纳税</view>
+    </navigator>
   </view>  
 </template>
